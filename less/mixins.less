@@ -1,1 +1,22 @@
 // Mixins Here
+
+.background-nav{
+    background-color: lightgray;
+    align-items: center;
+    height: 10%;
+}
+
+.padding{
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+.button-mixin(@color, @border, @font) {
+    background-color: darkblue;
+    color: @color;
+    border-radius: @border;
+    font-size: @font;
+    &:hover {background-color: white; color:darkblue;}
+    width:150px;
+    height:40px;
+}
